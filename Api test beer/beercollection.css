@@ -1,0 +1,76 @@
+body {
+    background-image: url('https://cdn.wallpapersafari.com/96/39/6fPR9B.jpg');
+    background-repeat:no-repeat;
+    margin: 0 auto;
+    padding: 0;
+}
+
+:root {
+    --btn-color: #f28e1c;
+    --btn-txt: Zilla Slab, serif;
+    --txt-color: #FFF01F;
+    --main-txt: 'Satisfy', cursive;
+}
+
+/* font-family: 'Cookie', cursive;5font-family: 'Indie Flower', cursive;
+
+font-family: 'Satisfy', cursive;
+
+font-family: 'Zilla Slab', serif; */
+
+
+#beer-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+    margin: 1rem 5rem;
+    padding: 1.5rem;
+    background-color: rgba(2, 2, 2, 0.911);
+    border-radius: 1rem;
+    width: 700px;
+    height: 550px;
+}
+div{
+    color: var(--txt-color);
+    font-size: 1rem;
+    text-shadow:
+        0 0 1px rgb(65, 65, 65),
+        0 0 1px rgb(32, 30, 30),
+        0 0 1px rgb(204, 146, 19),
+        0 0 0px rgb(241, 187, 71),
+        0 0 1px rgb(255, 255, 255),
+        0 0 10px rgb(241, 187, 71),
+        0 0 10px rgb(241, 187, 71)
+}
+button{
+    background-color: var(--btn-color);
+    color: var(--btn-txt);
+}
+img {
+    width: 140px;
+}
+#homebtn{
+    margin: .5rem;
+    padding: .6rem;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 1rem;
+    font-family: var(--btn-txt);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#homebtn:hover{
+    background-color: white;
+    box-shadow:
+        0 0 4px #fff,
+        0 0 1px #fff,
+        0 0 10px rgb(204, 146, 19),
+        0 0 0px rgb(241, 187, 71),
+        0 0 10px rgb(23, 23, 23),
+        0 0 10px rgb(241, 187, 71),
+        0 0 10px rgb(241, 187, 71);
+    outline: none;
+}

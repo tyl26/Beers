@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Indie+Flower&family=Satisfy&family=Zilla+Slab&display=swap');
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-image: url('photo-1580397581145-cdb6a35b7d3f.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+
+}
+
+:root {
+    --btn-color: #f28e1c;
+    --btn-txt: Zilla Slab, serif;
+    --txt-color: #FFF01F;
+    --main-txt: 'Satisfy', cursive;
+}
+
+/* font-family: 'Cookie', cursive;
+
+font-family: 'Indie Flower', cursive;
+
+font-family: 'Satisfy', cursive;
+
+font-family: 'Zilla Slab', serif; */
+header {
+    text-align: center;
+    color: var(--txt-color);
+    font-family: var(--main-txt);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    animation: neon 2s infinite;
+}
+
+@keyframes neon {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 2px #fff,
+            0 0 2px #fff,
+            0 0 50px rgb(204, 146, 19),
+            0 0 0px rgb(241, 187, 71),
+            0 0 10px rgb(23, 23, 23),
+            0 0 10px rgb(241, 187, 71),
+            0 0 10px rgb(241, 187, 71)
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+#choice {
+    margin: 10rem 10rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#random-beer {
+    padding: 1.5rem;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 1.2rem;
+    font-family: var(--btn-txt);
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+
+#input {
+    margin-right: -6rem;
+
+}
+
+#search {
+    padding: 1.5rem;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 1.2rem;
+    font-family: var(--btn-txt);
+    font-weight: 700;
+    font-size: 1.3rem;
+
+}
+
+
+#input p,
+#btn p {
+    color: var(--txt-color);
+    font-size: 1.2rem;
+    text-shadow:
+        0 0 4px #fff,
+        0 0 1px #fff,
+        0 0 10px rgb(204, 146, 19),
+        0 0 0px rgb(241, 187, 71),
+        0 0 10px rgb(23, 23, 23),
+        0 0 10px rgb(241, 187, 71),
+        0 0 10px rgb(241, 187, 71)
+}
+
+#random-beer:hover,
+#search:hover,
+#infoBtn:hover,
+#homebtn:hover,
+#dropDown:hover,
+#dropDown:focus,
+#search:focus {
+    background-color: white;
+    box-shadow:
+        0 0 4px #fff,
+        0 0 1px #fff,
+        0 0 10px rgb(204, 146, 19),
+        0 0 0px rgb(241, 187, 71),
+        0 0 10px rgb(23, 23, 23),
+        0 0 10px rgb(241, 187, 71),
+        0 0 10px rgb(241, 187, 71);
+    outline: none;
+}
+
+#infoBtn,
+button {
+    padding: .5rem;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 1.2rem;
+    font-family: var(--btn-txt);
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#homebtn {
+    margin: 1rem;
+    display: none;
+    padding: .6rem;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 1rem;
+    font-family: var(--btn-txt);
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#product {
+    display: none;
+    margin-top: 8rem;
+    margin-left: -3.5rem;
+
+}
+
+#beer-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: rgba(2, 2, 2, 0.61);
+    border-radius: 1rem;
+    width: 550px;
+    height: 262px;
+}
+
+div {
+    color: var(--txt-color);
+    font-size: 1.5rem;
+    text-shadow:
+        0 0 1px rgb(65, 65, 65),
+        0 0 1px rgb(32, 30, 30),
+        0 0 10px rgb(204, 146, 19),
+        0 0 0px rgb(241, 187, 71),
+        0 0 10px rgb(255, 255, 255),
+        0 0 10px rgb(241, 187, 71),
+        0 0 10px rgb(241, 187, 71)
+}
+
+img {
+    width: 54px;
+
+}
+
+
+#chosen {
+    display: none;
+    margin-top: 8rem;
+    text-align: center;
+    color: var(--txt-color);
+    font-family: var(--main-txt);
+    font-size: 5rem;
+    line-height: .2rem;
+    animation: neon 2s infinite;
+}
+
+
+#searchedBeer {
+    width: 700px;
+    background-color: rgba(2, 2, 2, 0.336);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    visibility: hidden;
+    text-shadow:
+        0 0 1px rgb(255, 255, 255),
+        0 0 1px rgb(241, 241, 241),
+        0 0 10px rgb(204, 146, 19),
+        0 0 0px rgb(241, 187, 71),
+        0 0 10px rgb(255, 255, 255),
+        0 0 10px rgb(241, 187, 71),
+        0 0 10px rgb(241, 187, 71)
+}
+
+#searchedBeer img {
+    align-self: center;
+}
+
+/* article {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 200px;
+    margin: 1.5rem;
+
+} */
+
+#dropDown {
+    padding: .5rem;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 1.2rem;
+    font-family: var(--btn-txt);
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#pagination{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+}
+#nextPage
+{
+    visibility: hidden;
+}
+#prevPage {
+    display: none;
+}

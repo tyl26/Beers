@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/beers.css">
+    <title>beers</title>
+</head>
+
+<body>
+    <header>
+        <h1> Welcome to beer land. </h1>
+        <h3>Press the button if you're feeling brave today or search the beer of your liking</h3>
+    </header>
+    <main>
+        <section id="choice">
+            <section id="btn">
+                <button id="random-beer">Get random beer</button>
+                <p>Press me to get a random beer</p>
+
+            </section>
+
+            <section id="input">
+                <input type="text" placeholder="Find what you like..." id="search">
+                <p>You can look for food pair, any ingrendians <br> or by percentage</p>
+
+                <select id="dropDown">
+                    <option value="beer_name">Name</option>
+                    <option value="abv_gt">Percentage</option>
+                    <option value="hops">Hops</option>
+                    <option value="food">Food</option>
+                </select>
+            </section>
+
+        </section>
+        <button id="homebtn">home</button>
+        <div id="chosen">
+            Todays choice is..
+
+        </div>
+
+
+        <section id="product">
+            <section id="beer-container">
+                <Img id="beerImg"></Img>
+                <div>
+                    <h2 id="beerName"></h2>
+                    <button id="infoBtn">About this beer</button>
+                </div>
+            </section>
+        </section>
+
+        <section class="container">
+            <section id="searchedBeer">
+
+            </section>
+        </section>
+
+        <section id="pagination">
+            <button id="prevPage">Previous Page </button>
+            <button id="nextPage">Next Page </button>
+        </section>
+
+    </main>
+
+
+
+    <script src="/beers.js"></script>
+
+</body>
+
+</html>
